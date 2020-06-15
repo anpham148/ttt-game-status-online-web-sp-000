@@ -9,7 +9,7 @@ WIN_COMBINATIONS = [[0, 1, 2],[3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5,
 def won?(board)
 #   if !(position_taken?(board, index))
 #   false
-# else 
+# else
   combination = []
   WIN_COMBINATIONS.each do |win_combination|
     win = win_combination.all? do |win_index|
@@ -18,7 +18,7 @@ def won?(board)
       end
     end
     if win
-      combination = win_combination 
+      combination = win_combination
     end
   end
   combination
