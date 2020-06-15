@@ -34,5 +34,7 @@ end
 
 def draw?(board)
    full?(board) && !won?(board) ? true : false
-
 end
+
+def over?(board)
+  full?(board) || won?(board) || draw?(board) ? true : false
