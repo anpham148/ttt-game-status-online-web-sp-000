@@ -9,7 +9,7 @@ WIN_COMBINATIONS = [[0, 1, 2],[3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5,
 def won?(board)
   WIN_COMBINATIONS.each do |win_combination|
     win_combination.all? do |character|
-      character == "X" || character == "O"
+      character = character
     end
   end
 end
