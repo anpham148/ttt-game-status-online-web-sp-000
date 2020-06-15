@@ -41,8 +41,8 @@ def over?(board)
 end
 
 def winner?(board)
-  if won?(board)
-    won?(board).include?("X") ? "X"
-    won?(board).include?("O") ? "O"
+if won?(board)
+  result = won?(board)
+  board[result[0]] == "X" ? puts "X" : puts "O"
 
 end
