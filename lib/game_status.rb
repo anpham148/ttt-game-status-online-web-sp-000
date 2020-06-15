@@ -10,7 +10,8 @@ def won?(board)
   win = false
   WIN_COMBINATIONS.each do |win_combination|
   win = win_combination.all? do |win_index|
-      board[win_index] == "X" || board[win_index] == "O"
+      if (board[win_index] == "X" || board[win_index] == "O")
+        return win_combination
     end
   end
   win
