@@ -11,7 +11,7 @@ def won?(board)
   WIN_COMBINATIONS.each do |win_combination|
   win = win_combination.all? do |win_index|
       board[win_index] == "X" || board[win_index] == "O"
-      
+
     end
   end
   win
@@ -21,6 +21,9 @@ def full?(board)
   board.all? {|index| board[index] == "X" || board[index] == "O" }
 end
 
-def draw?(boards)
-
+def draw?(board)
+  if full?(board) && !won(board)
+    true
+  elsif (!full(board) && !won(board))|| won(board)
+    false
 end
