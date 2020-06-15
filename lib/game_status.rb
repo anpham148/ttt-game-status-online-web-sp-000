@@ -43,6 +43,6 @@ end
 def winner?(board)
 if won?(board)
   result = won?(board)
-  board[result[0]] == "X" ? puts "X" : puts "O"
+  board[result[0]] == "X" ? "X" : "O"
 
 end
