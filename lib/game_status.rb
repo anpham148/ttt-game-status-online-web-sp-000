@@ -14,7 +14,7 @@ def won?(board)
       return win_combination
     end
   end
-  position_taken?(board,index)
+  win 
 end
 
 def full?(board)
