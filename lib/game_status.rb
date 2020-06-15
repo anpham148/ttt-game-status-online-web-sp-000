@@ -19,7 +19,7 @@ end
 def full?(board)
   board_full = false
   board.all? {|index| board[index] == "X" || board[index] == "O" }
-  
+
   board_full
 end
 
