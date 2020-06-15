@@ -13,7 +13,15 @@ def won?(board)
   combination = nil
   WIN_COMBINATIONS.each do |win_combination|
     win = win_combination.all? do |win_index|
-      board[win_index] == "X"
+      board[win_index] == "X" || board[win_index] == "O"
+    end
+    if win
+      combination = win_combination
+    end
+  end
+  WIN_COMBINATIONS.each do |win_combination|
+    win = win_combination.all? do |win_index|
+      board[win_index] == "O"
     end
     if win
       combination = win_combination
