@@ -34,7 +34,7 @@ end
 
 
 def full?(board)
-  board.all? {|index| board[index] == "X" || board[index] == "O" }
+  board.all? {|index.to_i| board[index] == "X" || board[index] == "O" }
 end
 
 def draw?(board)
