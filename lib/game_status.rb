@@ -39,3 +39,11 @@ end
 def over?(board)
   full?(board) || won?(board) || draw?(board) ? true : false
 end
+
+def winner?(board)
+  if won?(board)
+    result = won?(board)
+    resullt.include?("X") ? "X"
+    result.include?("O") ? "O"
+
+end
