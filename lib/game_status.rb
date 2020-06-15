@@ -40,7 +40,7 @@ def over?(board)
   full?(board) || won?(board) || draw?(board) ? true : false
 end
 
-def winner?(board)
+def winner(board)
   if won?(board)
     result = won?(board)
     board[result[0]] == "X" ? "X" : "O"
