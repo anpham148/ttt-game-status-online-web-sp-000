@@ -35,9 +35,7 @@ end
 
 def full?(board)
   board.all? do |element|
-    index = element.to_i
-    if board[index] == "X" || board[index] == "O"
-      
+    element == "X" || element == "O"    
 end
 
 def draw?(board)
